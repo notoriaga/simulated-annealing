@@ -61,7 +61,7 @@ def load_optimal_solution(fpath: str) -> Tuple[int, List[int]]:
 
 
 def main() -> None:
-    test_cases = [('n18.txt', 'n18_sol.txt'),('n25.txt', 'n25_sol.txt'), ('n50.txt', 'n50_sol.txt')]
+    test_cases = [('data/n18.txt', 'data/n18_sol.txt'),('data/n25.txt', 'data/n25_sol.txt'), ('data/n50.txt', 'data/n50_sol.txt')]
     for case in test_cases:
         start = time.time()
         flow_matrix, dist_matrix = load_problem_instance(case[0])
